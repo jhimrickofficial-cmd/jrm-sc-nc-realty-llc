@@ -1,0 +1,2515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122435">
+  <meta name="description" content="Explore your next real estate move with SC NC REALTY LLC. Discover thoughtful guidance for buying, selling, and planning your property journey.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SC NC REALTY LLC | A More Considered Way to Move">
+  <meta property="og:description" content="Find your place. Make your move. Connect with SC NC REALTY LLC for a conversation about your real estate goals.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1600&q=85">
+
+  <title>SC NC REALTY LLC | Find Your Place</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #142839;
+      --navy-dark: #0d1e2c;
+      --navy-soft: #213a4a;
+      --gold: #c9ab77;
+      --gold-light: #e1cda9;
+      --cream: #f8f6f1;
+      --cream-dark: #efebe3;
+      --white: #ffffff;
+      --ink: #25323a;
+      --muted: #788188;
+      --line: #e5e6e4;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', Arial, sans-serif;
+      --display: 'Manrope', Arial, sans-serif;
+      --ease: cubic-bezier(.22, 1, .36, 1);
+      --shadow: 0 20px 60px rgba(14, 30, 44, .10);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 95px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    ::selection {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+    img { display: block; width: 100%; }
+    svg { display: block; }
+    h1,h2,h3,h4,p { margin-top: 0; }
+    h1,h2,h3 { line-height: 1.18; }
+    h1,h2 { font-family: var(--serif); font-weight: 400; }
+    section { position: relative; }
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(100% - 64px, 1200px);
+      margin: 0 auto;
+    }
+
+    .wide-container {
+      width: min(100% - 64px, 1360px);
+      margin: 0 auto;
+    }
+
+    .section-pad { padding: 125px 0; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      color: #a07f4f;
+      font-family: var(--display);
+      font-size: 11px;
+      line-height: 1.5;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 23px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 27px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .eyebrow.light {
+      color: var(--gold-light);
+    }
+
+    .section-title {
+      font-size: clamp(38px, 4.2vw, 61px);
+      letter-spacing: -.045em;
+      color: var(--navy);
+      margin-bottom: 25px;
+    }
+
+    .section-title em {
+      font-weight: 400;
+      color: #a88a5d;
+    }
+
+    .section-lead {
+      color: #66747a;
+      font-size: 16px;
+      line-height: 1.95;
+      max-width: 540px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      min-height: 55px;
+      padding: 16px 25px;
+      border: 1px solid transparent;
+      font-family: var(--display);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .095em;
+      text-transform: uppercase;
+      transition: background .3s, color .3s, transform .3s, border-color .3s;
+      white-space: normal;
+      text-align: center;
+    }
+
+    .btn:hover { transform: translateY(-3px); }
+
+    .btn svg, .text-link svg {
+      width: 16px;
+      height: 16px;
+      flex: none;
+      transition: transform .3s var(--ease);
+    }
+
+    .btn:hover svg, .text-link:hover svg {
+      transform: translateX(5px);
+    }
+
+    .btn-gold {
+      color: var(--navy-dark);
+      background: var(--gold);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+    }
+
+    .btn-navy {
+      color: white;
+      background: var(--navy);
+    }
+
+    .btn-navy:hover {
+      background: #294759;
+    }
+
+    .btn-outline {
+      color: white;
+      background: transparent;
+      border-color: rgba(255,255,255,.6);
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 17px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid var(--gold);
+      color: var(--navy);
+      font-family: var(--display);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      transition: color .25s;
+    }
+
+    .text-link:hover { color: #a78b5f; }
+
+    /* Header */
+
+    .site-header {
+      position: fixed;
+      z-index: 1000;
+      inset: 0 0 auto;
+      height: 90px;
+      background: rgba(13, 30, 44, .56);
+      border-bottom: 1px solid rgba(255,255,255,.15);
+      transition: height .3s, background .3s, box-shadow .3s;
+    }
+
+    .site-header.scrolled {
+      height: 77px;
+      background: rgba(13,30,44,.98);
+      box-shadow: 0 8px 35px rgba(0,0,0,.12);
+    }
+
+    .header-inner {
+      width: min(100% - 64px, 1360px);
+      margin: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 225px;
+      color: white;
+    }
+
+    .brand-mark {
+      width: 51px;
+      height: 51px;
+      flex: none;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      line-height: 1.12;
+    }
+
+    .brand-copy strong {
+      font-family: var(--display);
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: .06em;
+    }
+
+    .brand-copy small {
+      color: var(--gold-light);
+      font-family: var(--display);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .34em;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(15px, 2vw, 30px);
+    }
+
+    .desktop-nav a {
+      color: rgba(255,255,255,.9);
+      font-family: var(--display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      transition: color .2s;
+    }
+
+    .desktop-nav a:hover { color: var(--gold-light); }
+
+    .header-cta {
+      min-height: 46px;
+      padding: 13px 18px;
+      font-size: 10px;
+      gap: 12px;
+    }
+
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      color: white;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.3);
+    }
+
+    .menu-toggle svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--navy-dark);
+      padding: 25px 32px 35px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      box-shadow: var(--shadow);
+    }
+
+    .mobile-nav.open {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .mobile-nav > a:not(.btn) {
+      color: white;
+      font-size: 15px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .mobile-nav .btn { margin-top: 24px; }
+
+    /* Hero */
+
+    .hero {
+      min-height: 780px;
+      min-height: min(900px, 100svh);
+      display: flex;
+      align-items: center;
+      background: var(--navy-dark);
+      color: white;
+      overflow: hidden;
+      padding-top: 90px;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-image img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center 52%;
+      animation: heroScale 12s ease-out both;
+    }
+
+    @keyframes heroScale {
+      from { transform: scale(1.09); }
+      to { transform: scale(1); }
+    }
+
+    .hero-shade {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(9,22,33,.88) 0%, rgba(9,22,33,.72) 40%, rgba(9,22,33,.12) 100%),
+        linear-gradient(0deg, rgba(9,22,33,.35), transparent 42%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding-top: 85px;
+      padding-bottom: 125px;
+    }
+
+    .hero-inner { max-width: 850px; }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(52px, 6.3vw, 91px);
+      line-height: 1.1;
+      letter-spacing: -.05em;
+      margin-bottom: 29px;
+    }
+
+    .hero h1 em {
+      color: var(--gold-light);
+      font-weight: 400;
+    }
+
+    .hero-description {
+      color: rgba(255,255,255,.82);
+      max-width: 505px;
+      font-size: 16px;
+      line-height: 1.95;
+      margin-bottom: 37px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-bottom {
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-top: 1px solid rgba(255,255,255,.22);
+    }
+
+    .hero-bottom-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 20px;
+    }
+
+    .hero-loc {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: rgba(255,255,255,.83);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-weight: 700;
+    }
+
+    .hero-loc svg {
+      width: 17px;
+      height: 17px;
+      stroke: var(--gold-light);
+    }
+
+    .scroll-note {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: rgba(255,255,255,.75);
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: 10px;
+    }
+
+    .scroll-note::after {
+      content: '';
+      width: 45px;
+      height: 1px;
+      background: var(--gold-light);
+    }
+
+    /* Intro bar */
+
+    .intro-strip {
+      background: var(--cream);
+      border-bottom: 1px solid #e9e5dc;
+    }
+
+    .intro-strip-inner {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr 1fr;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .intro-message {
+      font-family: var(--serif);
+      color: var(--navy);
+      font-size: 23px;
+      line-height: 1.4;
+      max-width: 315px;
+    }
+
+    .intro-point {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      border-left: 1px solid #dfdbd2;
+      padding-left: 42px;
+      min-height: 58px;
+    }
+
+    .intro-point svg {
+      color: #ae9167;
+      width: 30px;
+      height: 30px;
+      flex: none;
+    }
+
+    .intro-point span {
+      color: var(--navy);
+      font-size: 12px;
+      line-height: 1.65;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+
+    /* Section heading */
+
+    .center-heading {
+      max-width: 740px;
+      margin: 0 auto 54px;
+      text-align: center;
+    }
+
+    .center-heading .eyebrow::before {
+      display: none;
+    }
+
+    .center-heading .eyebrow {
+      justify-content: center;
+    }
+
+    .center-heading .section-lead {
+      margin: auto;
+    }
+
+    /* Pathways */
+
+    .pathways {
+      background: var(--white);
+    }
+
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .path-card {
+      min-height: 535px;
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+      color: white;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .path-card img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s var(--ease);
+    }
+
+    .path-card:hover img { transform: scale(1.07); }
+
+    .path-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(8,22,32,.95), rgba(8,22,32,.38) 48%, rgba(8,22,32,.05));
+    }
+
+    .path-card-content {
+      position: relative;
+      z-index: 2;
+      padding: 45px;
+      width: 100%;
+    }
+
+    .path-index {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--gold-light);
+      font-size: 11px;
+      letter-spacing: .2em;
+      font-weight: 700;
+    }
+
+    .path-card h3 {
+      font-family: var(--serif);
+      font-size: clamp(35px, 3.3vw, 47px);
+      font-weight: 400;
+      margin-bottom: 13px;
+    }
+
+    .path-card p {
+      max-width: 355px;
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .path-card .text-link { color: white; }
+
+    /* About */
+
+    .about {
+      background: var(--cream);
+      overflow: hidden;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: clamp(60px, 8vw, 115px);
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+      padding: 0 60px 65px 0;
+    }
+
+    .about-main-img {
+      height: 625px;
+      object-fit: cover;
+    }
+
+    .about-secondary-img {
+      position: absolute;
+      width: 47%;
+      height: 265px;
+      object-fit: cover;
+      bottom: 0;
+      right: 0;
+      border: 8px solid var(--cream);
+      box-shadow: var(--shadow);
+    }
+
+    .about-decor {
+      position: absolute;
+      top: -22px;
+      left: -22px;
+      width: 160px;
+      height: 160px;
+      border-left: 1px solid var(--gold);
+      border-top: 1px solid var(--gold);
+      pointer-events: none;
+    }
+
+    .about-copy .section-title {
+      font-size: clamp(38px, 4vw, 58px);
+    }
+
+    .about-copy p {
+      font-size: 15px;
+      color: #69747b;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+
+    .about-signature {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 23px 0;
+      margin: 15px 0 30px;
+      border-top: 1px solid #dedbd3;
+      border-bottom: 1px solid #dedbd3;
+    }
+
+    .signature-icon {
+      display: grid;
+      place-items: center;
+      flex: none;
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--gold);
+      color: #a4875b;
+    }
+
+    .signature-icon svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .about-signature strong {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .about-signature small {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Services */
+
+    .services {
+      background: white;
+    }
+
+    .services-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .services-heading .section-title {
+      max-width: 620px;
+      margin-bottom: 0;
+    }
+
+    .services-heading > p {
+      max-width: 300px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.85;
+      margin-bottom: 5px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .service-card {
+      padding: 42px 36px 40px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: white;
+      transition: background .3s;
+    }
+
+    .service-card:hover {
+      background: var(--cream);
+    }
+
+    .service-icon {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border: 1px solid #e5d5b8;
+      color: #ad8b59;
+      margin-bottom: 29px;
+    }
+
+    .service-icon svg {
+      width: 27px;
+      height: 27px;
+    }
+
+    .service-number {
+      display: block;
+      color: #b6a586;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 23px;
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      color: #758087;
+      font-size: 13px;
+      line-height: 1.9;
+      margin-bottom: 0;
+    }
+
+    /* Editorial gallery */
+
+    .gallery-section {
+      background: var(--navy-dark);
+      padding: 115px 0 120px;
+      color: white;
+    }
+
+    .gallery-section .section-title {
+      color: white;
+    }
+
+    .gallery-section .section-title em {
+      color: var(--gold-light);
+    }
+
+    .gallery-section .section-lead {
+      color: rgba(255,255,255,.63);
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 35px;
+      margin-bottom: 45px;
+    }
+
+    .gallery-header .section-title {
+      margin-bottom: 0;
+    }
+
+    .gallery-header .section-lead {
+      max-width: 305px;
+      font-size: 13px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.14fr .86fr 1fr;
+      grid-template-rows: 265px 265px;
+      gap: 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .gallery-item.tall {
+      grid-row: span 2;
+    }
+
+    .gallery-item.wide {
+      grid-column: span 2;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s var(--ease);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 35% 0 0;
+      background: linear-gradient(transparent, rgba(0,0,0,.5));
+    }
+
+    .gallery-label {
+      position: absolute;
+      z-index: 2;
+      bottom: 23px;
+      left: 26px;
+      color: white;
+      font-family: var(--serif);
+      font-size: 19px;
+    }
+
+    .gallery-disclaimer {
+      color: rgba(255,255,255,.5);
+      font-size: 11px;
+      margin: 21px 0 0;
+    }
+
+    /* Why choose */
+
+    .why-section {
+      background: var(--cream);
+      overflow: hidden;
+    }
+
+    .why-layout {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: 95px;
+    }
+
+    .why-intro .section-title {
+      font-size: clamp(40px, 4vw, 58px);
+    }
+
+    .why-intro .section-lead {
+      margin-bottom: 34px;
+    }
+
+    .why-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .why-item {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 23px;
+      padding: 27px 0;
+      border-bottom: 1px solid #deddd7;
+    }
+
+    .why-item:first-child {
+      border-top: 1px solid #deddd7;
+    }
+
+    .why-item > span {
+      color: #b79a6c;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-style: italic;
+    }
+
+    .why-item h3 {
+      color: var(--navy);
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .why-item p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.85;
+      margin-bottom: 0;
+    }
+
+    /* Quote visual */
+
+    .statement-section {
+      position: relative;
+      min-height: 465px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: var(--navy);
+      overflow: hidden;
+    }
+
+    .statement-section > img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .statement-section::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(12,29,43,.78);
+    }
+
+    .statement-content {
+      position: relative;
+      z-index: 2;
+      padding: 95px 0;
+    }
+
+    .statement-line {
+      width: 45px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 28px;
+    }
+
+    .statement-content h2 {
+      max-width: 790px;
+      margin: 0 auto 24px;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5vw, 67px);
+      font-weight: 400;
+      line-height: 1.35;
+      letter-spacing: -.04em;
+    }
+
+    .statement-content h2 em { color: var(--gold-light); }
+
+    .statement-content p {
+      color: rgba(255,255,255,.75);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .23em;
+      margin: 0;
+    }
+
+    /* Process */
+
+    .process-section { background: white; }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 70px;
+    }
+
+    .process-step {
+      padding: 0 28px 0 0;
+      position: relative;
+    }
+
+    .process-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background: #e1ddd4;
+      top: 30px;
+      left: 69px;
+      right: 18px;
+    }
+
+    .process-circle {
+      display: grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      border: 1px solid var(--gold);
+      color: #a88958;
+      background: white;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-style: italic;
+      margin-bottom: 29px;
+    }
+
+    .process-step h3 {
+      color: var(--navy);
+      font-family: var(--serif);
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 13px;
+    }
+
+    .process-step p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.85;
+      max-width: 225px;
+    }
+
+    /* CTA */
+
+    .feature-cta {
+      background: var(--gold);
+      padding: 0;
+    }
+
+    .feature-cta-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 490px;
+    }
+
+    .feature-cta-image {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .feature-cta-image img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .feature-cta-copy {
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      padding: 75px clamp(35px, 6vw, 100px);
+    }
+
+    .feature-cta-copy > div {
+      max-width: 495px;
+    }
+
+    .feature-cta-copy h2 {
+      color: white;
+      font-size: clamp(39px, 4vw, 59px);
+      margin-bottom: 25px;
+    }
+
+    .feature-cta-copy p {
+      color: rgba(255,255,255,.72);
+      max-width: 435px;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 32px;
+    }
+
+    /* Contact */
+
+    .contact-section {
+      background: var(--cream);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      align-items: start;
+      gap: clamp(45px, 7vw, 105px);
+    }
+
+    .contact-copy .section-title {
+      font-size: clamp(40px, 4.2vw, 59px);
+    }
+
+    .contact-copy .section-lead {
+      margin-bottom: 43px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 19px;
+      margin-bottom: 28px;
+    }
+
+    .contact-detail svg {
+      width: 21px;
+      height: 21px;
+      color: #a78b60;
+      flex: none;
+      margin-top: 3px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      font-size: 13px;
+      color: #788087;
+    }
+
+    .contact-detail a:hover { color: #987747; }
+
+    .contact-form-wrap {
+      background: var(--white);
+      padding: clamp(30px, 4vw, 55px);
+      box-shadow: 0 14px 60px rgba(15,33,46,.055);
+    }
+
+    .form-heading {
+      font-family: var(--serif);
+      font-size: 32px;
+      color: var(--navy);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .form-subheading {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 23px 18px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    .field label {
+      display: block;
+      color: #3e4e57;
+      font-family: var(--display);
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 9px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      display: block;
+      width: 100%;
+      background: #fafaf9;
+      border: 1px solid #e5e6e5;
+      border-radius: 0;
+      padding: 14px 15px;
+      outline: none;
+      color: var(--navy);
+      font-size: 13px;
+      transition: border-color .25s, box-shadow .25s;
+    }
+
+    .field input,
+    .field select { min-height: 52px; }
+
+    .field textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,171,119,.12);
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: #a1a7aa;
+    }
+
+    .consent {
+      display: flex;
+      gap: 12px;
+      align-items: start;
+      margin: 23px 0;
+    }
+
+    .consent input {
+      width: 17px;
+      height: 17px;
+      accent-color: var(--navy);
+      flex: none;
+      margin: 3px 0 0;
+    }
+
+    .consent label {
+      font-size: 11px;
+      line-height: 1.8;
+      color: #69737b;
+    }
+
+    .form-submit {
+      width: 100%;
+      justify-content: space-between;
+      padding: 17px 24px;
+    }
+
+    .form-message {
+      display: none;
+      padding: 14px;
+      margin-top: 18px;
+      font-size: 12px;
+      line-height: 1.8;
+      background: #f7f2e8;
+      border-left: 3px solid var(--gold);
+      color: var(--navy);
+    }
+
+    .form-message.visible { display: block; }
+
+    /* Location */
+
+    .location-section {
+      background: #fff;
+      padding: 95px 0;
+    }
+
+    .location-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 90px;
+    }
+
+    .location-copy .section-title {
+      font-size: clamp(38px, 4vw, 54px);
+    }
+
+    .location-copy p {
+      color: var(--muted);
+      max-width: 450px;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 30px;
+    }
+
+    .location-map {
+      position: relative;
+      min-height: 335px;
+      background: #e9e6df;
+      overflow: hidden;
+    }
+
+    .location-map iframe {
+      width: 100%;
+      height: 335px;
+      display: block;
+      border: 0;
+      filter: grayscale(.55);
+    }
+
+    /* Footer */
+
+    .site-footer {
+      background: #0c1b28;
+      color: white;
+      padding: 82px 0 0;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.65fr .8fr .8fr 1fr;
+      gap: 52px;
+      padding-bottom: 70px;
+    }
+
+    .footer-brand > p {
+      color: rgba(255,255,255,.52);
+      max-width: 310px;
+      font-size: 13px;
+      line-height: 1.9;
+      margin-top: 25px;
+    }
+
+    .footer-column h3 {
+      font-family: var(--display);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin: 10px 0 25px;
+    }
+
+    .footer-column a {
+      display: block;
+      width: fit-content;
+      color: rgba(255,255,255,.65);
+      font-size: 13px;
+      margin-bottom: 14px;
+      transition: color .25s;
+    }
+
+    .footer-column a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-column p {
+      color: rgba(255,255,255,.58);
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 25px 0;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,.45);
+      font-size: 11px;
+      margin: 0;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-legal a {
+      color: rgba(255,255,255,.5);
+      font-size: 11px;
+    }
+
+    .footer-legal a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-note {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 15px 0 21px;
+      color: rgba(255,255,255,.34);
+      font-size: 10px;
+      text-align: center;
+    }
+
+    /* Reveal animations */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .85s var(--ease), transform .85s var(--ease);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1100px) {
+      .desktop-nav { gap: 15px; }
+      .desktop-nav a { font-size: 10px; }
+      .header-cta { display: none; }
+      .why-layout { gap: 55px; }
+      .about-layout { gap: 60px; }
+      .footer-top { gap: 25px; }
+    }
+
+    @media (max-width: 900px) {
+      .desktop-nav { display: none; }
+      .menu-toggle { display: flex; }
+      .site-header { height: 77px; }
+      .hero { min-height: 750px; }
+      .intro-strip-inner { gap: 20px; }
+      .intro-point { padding-left: 20px; }
+      .about-layout, .why-layout, .contact-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+      .about-visual { padding-right: 30px; }
+      .about-main-img { height: 540px; }
+      .about-secondary-img { height: 210px; }
+      .service-card { padding: 31px 25px; }
+      .gallery-grid { grid-template-rows: 215px 215px; }
+      .location-layout { gap: 40px; }
+      .footer-top { grid-template-columns: 1.3fr 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 700px) {
+      html { scroll-padding-top: 75px; }
+
+      .container, .wide-container, .header-inner {
+        width: min(100% - 38px, 1200px);
+      }
+
+      .section-pad { padding: 80px 0; }
+
+      .site-header,
+      .site-header.scrolled {
+        height: 73px;
+      }
+
+      .brand {
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+      }
+
+      .brand-copy strong { font-size: 14px; }
+      .brand-copy small { font-size: 8px; letter-spacing: .25em; }
+
+      .hero {
+        min-height: 790px;
+        min-height: 94svh;
+        align-items: center;
+        padding-top: 73px;
+      }
+
+      .hero-image img { object-position: 58% center; }
+
+      .hero-shade {
+        background: linear-gradient(90deg, rgba(9,22,33,.86), rgba(9,22,33,.45)),
+                    linear-gradient(0deg, rgba(9,22,33,.35), transparent);
+      }
+
+      .hero-content {
+        padding-top: 45px;
+        padding-bottom: 90px;
+      }
+
+      .hero h1 {
+        font-size: clamp(45px, 10vw, 65px);
+        max-width: 540px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+        max-width: 420px;
+      }
+
+      .hero-actions { align-items: stretch; }
+      .hero-actions .btn { min-height: 53px; }
+      .hero-bottom-inner { min-height: 57px; }
+      .hero-loc { font-size: 9px; letter-spacing: .1em; }
+      .scroll-note { display: none; }
+
+      .intro-strip-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 14px;
+        padding: 27px 0;
+      }
+
+      .intro-message {
+        grid-column: 1 / -1;
+        font-size: 21px;
+        max-width: none;
+      }
+
+      .intro-point {
+        padding-left: 0;
+        border-left: 0;
+        gap: 11px;
+      }
+
+      .intro-point svg { width: 25px; height: 25px; }
+      .intro-point span { font-size: 10px; }
+
+      .section-title { font-size: clamp(37px, 8vw, 50px); }
+      .section-lead { font-size: 14px; }
+      .center-heading { margin-bottom: 36px; }
+
+      .pathway-grid { grid-template-columns: 1fr; gap: 17px; }
+      .path-card { min-height: 450px; }
+      .path-card-content { padding: 30px; }
+      .path-card h3 { font-size: 39px; }
+
+      .about-layout,
+      .why-layout,
+      .contact-layout,
+      .location-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .about-visual {
+        padding: 0 35px 40px 0;
+      }
+
+      .about-main-img { height: 480px; }
+      .about-secondary-img { height: 190px; }
+      .about-decor { top: -10px; left: -10px; }
+
+      .services-heading {
+        display: block;
+        margin-bottom: 35px;
+      }
+
+      .services-heading .section-title { margin-bottom: 20px; }
+      .services-heading > p { max-width: 480px; }
+
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .service-card { padding: 28px 20px; }
+      .service-card h3 { font-size: 20px; }
+      .service-icon { width: 47px; height: 47px; margin-bottom: 22px; }
+      .service-icon svg { width: 23px; height: 23px; }
+
+      .gallery-section { padding: 80px 0; }
+      .gallery-header { display: block; }
+      .gallery-header .section-title { margin-bottom: 18px; }
+      .gallery-header .section-lead { max-width: 500px; }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 210px 210px;
+        gap: 10px;
+      }
+
+      .gallery-item.tall { grid-column: 1 / -1; grid-row: auto; }
+      .gallery-item.wide { grid-column: auto; }
+      .gallery-label { left: 15px; bottom: 15px; font-size: 16px; }
+
+      .why-list { margin-top: 5px; }
+      .why-item { padding: 22px 0; }
+
+      .statement-section { min-height: 395px; }
+      .statement-content h2 { font-size: clamp(38px, 8vw, 55px); }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 25px;
+        margin-top: 45px;
+      }
+
+      .process-step:not(:last-child)::after { display: none; }
+      .process-step { padding-right: 0; }
+      .process-circle { margin-bottom: 20px; }
+
+      .feature-cta-layout { grid-template-columns: 1fr; }
+      .feature-cta-image { min-height: 340px; }
+      .feature-cta-copy { padding: 65px 30px; }
+      .feature-cta-copy h2 { font-size: 43px; }
+
+      .contact-layout { gap: 30px; }
+      .contact-form-wrap { padding: 30px 24px; }
+
+      .location-section { padding: 75px 0; }
+      .location-layout { gap: 30px; }
+      .location-map, .location-map iframe { min-height: 300px; height: 300px; }
+
+      .site-footer { padding-top: 65px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 35px 25px; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 420px) {
+      .hero h1 { font-size: 43px; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .hero-actions .btn { width: 100%; justify-content: space-between; }
+      .hero { min-height: 850px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { padding: 30px; }
+      .gallery-grid { grid-template-rows: 230px 180px 180px; }
+      .gallery-label { font-size: 14px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SVG icon library -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h16m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24">
+      <path d="m3 11 9-8 9 8v10H3V11Zm6 10v-7h6v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-key" viewBox="0 0 24 24">
+      <circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <path d="m12 12 9 9m-4-4 2-2m-5-1 2-2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M20.5 5.5a5.5 5.5 0 0 0-7.8 0L12 6.2l-.7-.7a5.5 5.5 0 0 0-7.8 7.8L12 21l8.5-7.7a5.5 5.5 0 0 0 0-7.8Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24">
+      <path d="M3 20V4m0 16h18M7 15l5-5 3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24">
+      <path d="M4 4h16v13H9l-5 4V4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M8 9h8m-8 4h6" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="m12 2 9 4v6c0 5-3 8-9 10-6-2-9-5-9-10V6l9-4Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="m8 12 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9 7 7m10 10 2.1 2.1m0-14.2L17 7M7 17l-2.1 2.1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+      <a class="brand" href="#home" aria-label="SC NC Realty LLC Home">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="SC NC Realty monogram">
+          <path d="M32 3 60 31v30H4V31L32 3Z" fill="none" stroke="#C9AB77" stroke-width="1.6"/>
+          <path d="M12 32 32 12l20 20" stroke="#C9AB77" stroke-width="1.2" fill="none"/>
+          <path d="M15 50h34" stroke="#C9AB77" stroke-width="1"/>
+          <text x="32" y="44" text-anchor="middle" fill="#FFFFFF" font-family="Georgia,serif" font-size="17" letter-spacing="-1.5">SCNC</text>
+        </svg>
+        <span class="brand-copy">
+          <strong>SC NC REALTY</strong>
+          <small>LLC · REAL ESTATE</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#buy">Buy</a>
+        <a href="#sell">Sell</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-gold header-cta" href="#contact">
+        Schedule a Consultation
+        <svg><use href="#i-arrow"/></svg>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#buy">Buy a Home</a>
+      <a href="#sell">Sell a Property</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-gold" href="#contact">Schedule a Consultation <svg><use href="#i-arrow"/></svg></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=85&auto=format&fit=crop"
+          alt="Beautiful contemporary luxury home interior"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-inner">
+            <span class="eyebrow light">A considered approach to real estate</span>
+            <h1>Your Next Chapter Begins With the <em>Right Home.</em></h1>
+            <p class="hero-description">
+              Every property has a story. Every move has a purpose.
+              Discover a more personal approach to buying, selling,
+              and finding the place where your next chapter begins.
+            </p>
+            <div class="hero-actions">
+              <a href="#buy" class="btn btn-gold">
+                Find Your Dream Home
+                <svg><use href="#i-arrow"/></svg>
+              </a>
+              <a href="#sell" class="btn btn-outline">
+                Sell Your Property
+                <svg><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="container hero-bottom-inner">
+          <div class="hero-loc">
+            <svg><use href="#i-pin"/></svg>
+            North Carolina · South Carolina
+          </div>
+          <a href="#pathways" class="scroll-note">Discover more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand introduction -->
+    <section class="intro-strip" aria-label="Our approach">
+      <div class="container intro-strip-inner">
+        <div class="intro-message">
+          Real estate is personal. Your experience should be, too.
+        </div>
+        <div class="intro-point">
+          <svg><use href="#i-compass"/></svg>
+          <span>Thoughtful Property<br>Guidance</span>
+        </div>
+        <div class="intro-point">
+          <svg><use href="#i-heart"/></svg>
+          <span>People First<br>Approach</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buyers and Sellers -->
+    <section class="pathways section-pad" id="pathways">
+      <div class="container">
+        <div class="center-heading reveal">
+          <span class="eyebrow">Where would you like to begin?</span>
+          <h2 class="section-title">Every Great Move Starts <em>Somewhere.</em></h2>
+          <p class="section-lead">
+            Whether you are searching for somewhere new or preparing
+            to say goodbye to a beloved home, the next step begins here.
+          </p>
+        </div>
+
+        <div class="pathway-grid">
+          <article class="path-card reveal" id="buy">
+            <img
+              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1100&q=85&auto=format&fit=crop"
+              alt="Contemporary residence surrounded by greenery"
+              loading="lazy"
+            >
+            <div class="path-card-content">
+              <span class="path-index">01 / THE BUYING EXPERIENCE</span>
+              <h3>Looking to Buy?</h3>
+              <p>
+                From your first ideas to finding the right fit,
+                take a thoughtful approach to your home search.
+              </p>
+              <a href="#contact" class="text-link" data-interest="Buying">
+                Explore Buying <svg><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="path-card reveal" id="sell">
+            <img
+              src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1100&q=85&auto=format&fit=crop"
+              alt="Beautiful modern home with landscaped entrance"
+              loading="lazy"
+            >
+            <div class="path-card-content">
+              <span class="path-index">02 / THE SELLING EXPERIENCE</span>
+              <h3>Ready to Sell?</h3>
+              <p>
+                A successful next chapter starts with a clear plan.
+                Explore the decisions involved in selling your property.
+              </p>
+              <a href="#contact" class="text-link" data-interest="Selling">
+                Start Selling <svg><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section-pad" id="about">
+      <div class="container about-layout">
+        <div class="about-visual reveal">
+          <div class="about-decor"></div>
+          <img
+            class="about-main-img"
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1050&q=85&auto=format&fit=crop"
+            alt="Elegant living room with warm textures and beautiful natural light"
+            loading="lazy"
+          >
+          <img
+            class="about-secondary-img"
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=85&auto=format&fit=crop"
+            alt="Contemporary architectural home interior"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="eyebrow">Welcome to SC NC Realty</span>
+          <h2 class="section-title">More Than a Property. <em>A Place to Belong.</em></h2>
+          <p>
+            Finding the right home or preparing to sell is about more
+            than a transaction. It is about lifestyle, timing,
+            possibilities, and the decisions that shape what comes next.
+          </p>
+          <p>
+            At SC NC REALTY LLC, the conversation begins with you.
+            Explore your priorities, ask meaningful questions, and
+            take a considered approach to your real estate journey.
+          </p>
+
+          <div class="about-signature">
+            <span class="signature-icon">
+              <svg><use href="#i-home"/></svg>
+            </span>
+            <div>
+              <strong>SC NC REALTY LLC</strong>
+              <small>Your next chapter in real estate.</small>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-navy">
+            Get to Know Us
+            <svg><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section-pad" id="services">
+      <div class="container">
+        <div class="services-heading reveal">
+          <div>
+            <span class="eyebrow">Explore your options</span>
+            <h2 class="section-title">Real Estate, With <em>Purpose.</em></h2>
+          </div>
+          <p>
+            Explore how professional real estate guidance can help
+            you prepare for the decisions ahead.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-home"/></svg></div>
+            <span class="service-number">01 / BUY</span>
+            <h3>Residential Buying</h3>
+            <p>Navigate the homebuying journey with greater clarity, from your first search to the important decisions ahead.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-key"/></svg></div>
+            <span class="service-number">02 / SELL</span>
+            <h3>Property Selling</h3>
+            <p>Explore a thoughtful selling strategy built around your property, priorities, and next move.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-chat"/></svg></div>
+            <span class="service-number">03 / CONNECT</span>
+            <h3>Real Estate Consultation</h3>
+            <p>Start with a meaningful conversation about your goals, questions, and available real estate options.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-compass"/></svg></div>
+            <span class="service-number">04 / DISCOVER</span>
+            <h3>Property Search Guidance</h3>
+            <p>Identify the features, property types, and locations that deserve your attention as you explore possibilities.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-chart"/></svg></div>
+            <span class="service-number">05 / EXPLORE</span>
+            <h3>Investment Conversations</h3>
+            <p>Discuss your real estate investment objectives and the considerations involved in evaluating property opportunities.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon"><svg><use href="#i-pin"/></svg></div>
+            <span class="service-number">06 / UNDERSTAND</span>
+            <h3>Market Guidance</h3>
+            <p>Ask about property conditions, local considerations, and the information that can support your next decision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property inspiration -->
+    <section class="gallery-section" id="inspiration">
+      <div class="wide-container">
+        <div class="gallery-header reveal">
+          <div>
+            <span class="eyebrow light">Spaces that inspire</span>
+            <h2 class="section-title">Imagine the <em>Possibilities.</em></h2>
+          </div>
+          <p class="section-lead">
+            Beautiful surroundings, meaningful spaces, and a home
+            that reflects your own way of living.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item tall reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1100&q=85&auto=format&fit=crop"
+              alt="Warm sophisticated residential living space"
+              loading="lazy"
+            >
+            <span class="gallery-label">Refined Living</span>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=900&q=85&auto=format&fit=crop"
+              alt="Beautiful architectural interior"
+              loading="lazy"
+            >
+            <span class="gallery-label">Timeless Design</span>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=85&auto=format&fit=crop"
+              alt="Bright contemporary interior"
+              loading="lazy"
+            >
+            <span class="gallery-label">Light & Space</span>
+          </div>
+
+          <div class="gallery-item wide reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1300&q=85&auto=format&fit=crop"
+              alt="Luxury kitchen and dining area"
+              loading="lazy"
+            >
+            <span class="gallery-label">Everyday Elegance</span>
+          </div>
+        </div>
+
+        <p class="gallery-disclaimer">
+          Imagery is for architectural and lifestyle inspiration only. Photographs do not represent actual listings or properties offered by SC NC REALTY LLC.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why choose -->
+    <section class="why-section section-pad" id="why">
+      <div class="container why-layout">
+        <div class="why-intro reveal">
+          <span class="eyebrow">The difference is in the details</span>
+          <h2 class="section-title">Real Estate Should Feel <em>More Personal.</em></h2>
+          <p class="section-lead">
+            Good decisions begin with asking the right questions.
+            A thoughtful real estate experience puts your goals,
+            preferences, and next steps at the center of the conversation.
+          </p>
+          <a href="#contact" class="btn btn-navy">
+            Let's Talk About Your Goals
+            <svg><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <div class="why-list">
+          <div class="why-item reveal">
+            <span>01</span>
+            <div>
+              <h3>Guidance That Starts With You</h3>
+              <p>Your real estate decisions should reflect what matters most to you, not a one-size-fits-all approach.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <span>02</span>
+            <div>
+              <h3>Clarity at Every Stage</h3>
+              <p>Understand your options, identify your questions, and feel more prepared for each decision.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <span>03</span>
+            <div>
+              <h3>Thoughtful Communication</h3>
+              <p>Begin with open conversation about your priorities, timeline, preferences, and concerns.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal">
+            <span>04</span>
+            <div>
+              <h3>Focus on What Comes Next</h3>
+              <p>Look beyond the immediate property decision and consider how your next move fits your bigger picture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial statement -->
+    <section class="statement-section" aria-label="Our philosophy">
+      <img
+        src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1800&q=85&auto=format&fit=crop"
+        alt="Sophisticated home with warm contemporary details"
+        loading="lazy"
+      >
+      <div class="container statement-content reveal">
+        <div class="statement-line"></div>
+        <h2>Because Home Is More Than <em>Where You Live.</em></h2>
+        <p>It's where your next story unfolds.</p>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process-section section-pad" id="process">
+      <div class="container">
+        <div class="center-heading reveal">
+          <span class="eyebrow">Your journey starts here</span>
+          <h2 class="section-title">A Simpler Path to Your <em>Next Move.</em></h2>
+          <p class="section-lead">
+            No two real estate journeys are exactly alike.
+            Here is a straightforward way to begin exploring yours.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="process-circle">01</div>
+            <h3>Let's Connect</h3>
+            <p>Tell us about your goals, what you are considering, and what matters most.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="process-circle">02</div>
+            <h3>Explore Your Options</h3>
+            <p>Discuss your property preferences, questions, and the possibilities ahead.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="process-circle">03</div>
+            <h3>Plan Your Next Move</h3>
+            <p>Consider the practical steps and information needed to make a thoughtful decision.</p>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="process-circle">04</div>
+            <h3>Move With Purpose</h3>
+            <p>Take your next step with a clearer picture of where you want to go.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conversion CTA -->
+    <section class="feature-cta" aria-label="Schedule a consultation">
+      <div class="feature-cta-layout">
+        <div class="feature-cta-image">
+          <img
+            src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1100&q=85&auto=format&fit=crop"
+            alt="Bright luxury living space"
+            loading="lazy"
+          >
+        </div>
+        <div class="feature-cta-copy">
+          <div class="reveal">
+            <span class="eyebrow light">Take the first step</span>
+            <h2>The Right Move Starts With <em style="color:var(--gold-light)">a Conversation.</em></h2>
+            <p>
+              Whether you are buying, selling, or simply exploring
+              possibilities, connect with SC NC REALTY LLC to
+              discuss what is next for you.
+            </p>
+            <a href="#contact" class="btn btn-gold">
+              Schedule Your Consultation
+              <svg><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section section-pad" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">We would love to hear from you</span>
+          <h2 class="section-title">Let's Talk About <em>What's Next.</em></h2>
+          <p class="section-lead">
+            Have a question about buying or selling?
+            Thinking about your next investment property?
+            Share a little about your goals and start the conversation.
+          </p>
+
+          <div class="contact-detail">
+            <svg><use href="#i-home"/></svg>
+            <div>
+              <strong>SC NC REALTY LLC</strong>
+              <span>Real Estate Agency</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <svg><use href="#i-pin"/></svg>
+            <div>
+              <strong>Find Us on Google Maps</strong>
+              <a href="https://www.google.com/maps/place/SC+NC+REALTY+LLC/@35.1999639,-82.2354544,15z/data=!4m6!3m5!1s0x8859d95b60f9d14b:0xf6a780218d596f6!8m2!3d35.1999639!4d-82.2354544!16s%2Fg%2F11qgxdlhwr" target="_blank" rel="noopener noreferrer">
+                View Business Location ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <svg><use href="#i-chat"/></svg>
+            <div>
+              <strong>Start a Conversation</strong>
+              <span>Use the inquiry form to tell us about your plans.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <h3 class="form-heading">Send an Inquiry</h3>
+          <p class="form-subheading">Tell us how we can help you get started.</p>
+
+          <!--
+            INTEGRATION NOTE:
+            Demo mode is enabled by default.
+
+            To activate lead capture:
+            1. Configure a verified and authorized CRM/form endpoint.
+            2. Replace the demo submission handler in the JavaScript below.
+            3. Ensure the endpoint accepts the exact form field names.
+            4. Add spam prevention and verify consent compliance.
+            5. Test delivery before publishing.
+
+            No real lead information is transmitted in demo mode.
+          -->
+
+          <form id="leadForm" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label for="firstName">First Name *</label>
+                <input id="firstName" name="first_name" type="text" placeholder="Your first name" autocomplete="given-name" maxlength="80" required>
+              </div>
+
+              <div class="field">
+                <label for="lastName">Last Name *</label>
+                <input id="lastName" name="last_name" type="text" placeholder="Your last name" autocomplete="family-name" maxlength="80" required>
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="Your phone number" autocomplete="tel" maxlength="35">
+              </div>
+
+              <div class="field full">
+                <label for="interest">I'm Interested In *</label>
+                <select id="interest" name="interest" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="Buying">Buying a Property</option>
+                  <option value="Selling">Selling a Property</option>
+                  <option value="Both">Buying and Selling</option>
+                  <option value="Investment">Investment Property</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="message">Tell Us a Little More</label>
+                <textarea id="message" name="message" placeholder="Share your real estate goals, preferred location, or questions..." maxlength="3000"></textarea>
+              </div>
+            </div>
+
+            <div class="consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">
+                I agree to provide my information for the purpose of responding to this inquiry. I understand that submitting this form does not establish an agency relationship. *
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-navy form-submit">
+              Let's Connect
+              <svg><use href="#i-arrow"/></svg>
+            </button>
+
+            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location-section" id="location">
+      <div class="container location-layout">
+        <div class="location-copy reveal">
+          <span class="eyebrow">Find our business</span>
+          <h2 class="section-title">Connecting You to <em>What's Next.</em></h2>
+          <p>
+            Explore the SC NC REALTY LLC Google Maps listing for
+            location details, directions, and business information.
+          </p>
+          <a
+            href="https://www.google.com/maps/place/SC+NC+REALTY+LLC/@35.1999639,-82.2354544,15z/data=!4m6!3m5!1s0x8859d95b60f9d14b:0xf6a780218d596f6!8m2!3d35.1999639!4d-82.2354544!16s%2Fg%2F11qgxdlhwr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-navy"
+          >
+            Open in Google Maps
+            <svg><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <div class="location-map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=SC%20NC%20REALTY%20LLC%2C%20Tryon%2C%20NC&output=embed"
+            title="Map showing SC NC REALTY LLC"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 3 60 31v30H4V31L32 3Z" fill="none" stroke="#C9AB77" stroke-width="1.6"/>
+              <path d="M12 32 32 12l20 20" stroke="#C9AB77" stroke-width="1.2" fill="none"/>
+              <path d="M15 50h34" stroke="#C9AB77" stroke-width="1"/>
+              <text x="32" y="44" text-anchor="middle" fill="#FFFFFF" font-family="Georgia,serif" font-size="17" letter-spacing="-1.5">SCNC</text>
+            </svg>
+            <span class="brand-copy">
+              <strong>SC NC REALTY</strong>
+              <small>LLC · REAL ESTATE</small>
+            </span>
+          </a>
+          <p>
+            Every move begins with possibility. Explore your real
+            estate goals with SC NC REALTY LLC and find your next chapter.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#inspiration">Inspiration</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Real Estate</h3>
+          <a href="#buy">Buying</a>
+          <a href="#sell">Selling</a>
+          <a href="#process">Our Process</a>
+          <a href="#contact">Consultation</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Get In Touch</h3>
+          <p>Let's begin a conversation about your next move.</p>
+          <a href="#contact">Send an Inquiry ↗</a>
+          <a href="#location">Find Our Location ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> SC NC REALTY LLC. All rights reserved.</p>
+        <div class="footer-legal">
+          <!-- Replace placeholders with approved, published legal pages. -->
+          <a href="#contact" title="Privacy Policy: add approved legal page before launch">Privacy Policy</a>
+          <a href="#contact" title="Terms of Use: add approved legal page before launch">Terms of Use</a>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        Illustrative website concept. Property imagery is representative stock photography and does not indicate available listings. Verify brokerage disclosures and service locations before public launch.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const header = document.getElementById('siteHeader');
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      const form = document.getElementById('leadForm');
+      const formMessage = document.getElementById('formMessage');
+      const interestSelect = document.getElementById('interest');
+
+      // Dynamic copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Sticky navigation background
+      const updateHeader = () => {
+        header.classList.toggle('scrolled', window.scrollY > 35);
+      };
+
+      window.addEventListener('scroll', updateHeader, { passive: true });
+      updateHeader();
+
+      // Mobile navigation
+      function closeMenu() {
+        mobileNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
+        document.body.classList.remove('menu-open');
+      }
+
+      menuToggle.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        document.body.classList.toggle('menu-open', isOpen);
+      });
+
+      document.querySelectorAll('#mobileNav a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && mobileNav.classList.contains('open')) {
+          closeMenu();
+          menuToggle.focus();
+        }
+      });
+
+      document.addEventListener('click', (event) => {
+        if (
+          mobileNav.classList.contains('open') &&
+          !mobileNav.contains(event.target) &&
+          !menuToggle.contains(event.target)
+        ) {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) closeMenu();
+      });
+
+      // Preselect buyer/seller form interest
+      document.querySelectorAll('[data-interest]').forEach(link => {
+        link.addEventListener('click', () => {
+          const interest = link.getAttribute('data-interest');
+          if (interestSelect.querySelector(`option[value="${interest}"]`)) {
+            interestSelect.value = interest;
+          }
+        });
+      });
+
+      // Section reveal animations
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const revealElements = document.querySelectorAll('.reveal');
+
+      if (!reduceMotion && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.08,
+          rootMargin: '0px 0px -35px 0px'
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+      } else {
+        revealElements.forEach(el => el.classList.add('visible'));
+      }
+
+      // Form demo mode
+      // This prevents a misleading success message and prevents
+      // transmission of user data before a backend is connected.
+      //
+      // For production:
+      // Replace this listener with a real, tested GoHighLevel
+      // form integration or authorized server-side endpoint.
+      // Do not expose private API keys in browser JavaScript.
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) return;
+
+        formMessage.classList.add('visible');
+        formMessage.textContent =
+          'This is a website demonstration. Your inquiry has not been sent. Please connect the form to an authorized lead management system before accepting inquiries.';
+
+        formMessage.scrollIntoView({
+          behavior: reduceMotion ? 'auto' : 'smooth',
+          block: 'nearest'
+        });
+      });
+
+      // Image error fallback (decorative SVG texture)
+      const fallbackImage = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+          <rect width="800" height="600" fill="#203544"/>
+          <path d="M0 400L400 130 800 400" fill="none" stroke="#8c8c77" stroke-opacity=".4" stroke-width="2"/>
+          <path d="M130 600V375l270-180 270 180v225" fill="none" stroke="#c9ab77" stroke-opacity=".35" stroke-width="2"/>
+          <path d="M260 600V420h280v180" fill="none" stroke="#c9ab77" stroke-opacity=".25" stroke-width="2"/>
+          <text x="400" y="320" text-anchor="middle" fill="#e1cda9" font-family="Georgia" font-size="34">SC NC REALTY</text>
+        </svg>
+      `)}`;
+
+      document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', () => {
+          if (img.dataset.fallbackApplied) return;
+          img.dataset.fallbackApplied = 'true';
+          img.src = fallbackImage;
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
